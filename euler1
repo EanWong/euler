@@ -1,0 +1,19 @@
+integer = 1
+num1 = 3
+num2 = 5
+sum = 0
+ceiling = 1000
+while integer*num1 < ceiling:
+    multiple = integer*num1
+    print(multiple)
+    sum = sum + multiple;
+    integer = integer + 1
+    
+integer = 1;
+while integer*num2 < ceiling:
+    multiple = integer * num2
+    if multiple % num1 != 0:
+        print(multiple)
+        sum = sum + multiple;
+    integer = integer + 1
+print(sum)
